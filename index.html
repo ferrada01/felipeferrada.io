@@ -207,6 +207,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		
+		<script>
+		  window.watsonAssistantChatOptions = {
+		      integrationID: "426657c2-128e-4dab-ad01-30b8c54f335d", // The ID of this integration.
+		      region: "eu-gb", // The region your integration is hosted in.
+		      serviceInstanceID: "9ff9eda6-734f-4671-9eee-5f8e5e59ba8a", // The ID of your service instance.
+		      onLoad: function(instance) { instance.render(); }
+		    };
+		  setTimeout(function(){
+		    const t=document.createElement('script');
+		    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+		    document.head.appendChild(t);
+		  });
+		</script>
 
 	</body>
 </html>
